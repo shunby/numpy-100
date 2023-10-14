@@ -1,0 +1,11 @@
+version: '2'
+services:
+  jup:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/work:cached
+    ports:
+      - "10000:8888"
+    
